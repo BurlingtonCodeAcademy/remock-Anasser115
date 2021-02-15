@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="/styles/style-home.css">
+  <script src="/script/script.js"></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
   <section id="body-grid">
     <section id="side-bar">
       <div class="small-post">
-        <h4 class="date-box">FEBRUARY 12</h4>
+        <button class="date-box small-button" onclick="window.location.href='blog-post.html'">FEBRUARY 12</button>
         <h4 class="small-title">Lorem, ipsum dolor.</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eos quo facilis. Reiciendis, voluptates odio iste
           omnis expedita eligendi autem!</p>
@@ -55,7 +56,7 @@
       <hr class="single-line">
 
       <div class="small-post">
-        <h4 class="date-box">FEBRUARY 12</h4>
+        <button class="date-box small-button" onclick="window.location.href='blog-post.html'">FEBRUARY 12</button>
         <h4 class="small-title">Lorem, ipsum dolor.</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eos quo facilis. Reiciendis, voluptates odio iste
           omnis expedita eligendi autem!</p>
@@ -63,7 +64,7 @@
       <hr class="single-line">
 
       <div class="small-post">
-        <h4 class="date-box">FEBRUARY 12</h4>
+        <button class="date-box small-button" onclick="window.location.href='blog-post.html'">FEBRUARY 12</button>
         <h4 class="small-title">Lorem, ipsum dolor.</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eos quo facilis. Reiciendis, voluptates odio iste
           omnis expedita eligendi autem!</p>
@@ -93,7 +94,9 @@
     <section id="main">
       <div id="main-1">
         <h3>Lorem, ipsum dolor.</h3>
-        <figure id="body-pic-1" class="large-image"><img src="/images/large-image.jpg" alt="Place Holder Image">
+        <figure id="body-pic-1" class="large-image">
+          <iframe width="500" height="200" src="https://www.youtube-nocookie.com/embed/KCDufBAHfhs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <img src="/images/large-image.jpg" alt="Place Holder Image"> -->
         </figure>
         <figcaption>Lorem, ipsum dolor.</figcaption>
         <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, consequatur est iste saepe incidunt,
@@ -126,13 +129,24 @@
     <section id="footer">
       <h2>QUESTIONS OR COMMENTS? GET IN TOUCH:</h2>
       <div id="contact-table">
-        <form action="mailto:info@burlingtoncodeacademy.com" type='submit' id="form-main">
+        <form action="mailto:info@burlingtoncodeacademy.com" onsubmit="resetInput()" type='submit' id="form-main">
           <input type="text" id="name" placeholder="Name" required>
           <input type="text" id="email" placeholder="E-mail" required><br>
           <textarea id="message" cols="38" rows="8" placeholder='Message' required></textarea><br>
-          <input type="submit" value="Submit" />
+          <input onclick="submitAlert()" type="submit" value="Submit" />
         </form>
-        <div id="contact-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste corporis harum hic eveniet quo quisquam dolorem optio voluptatibus, fuga perspiciatis?</div>
+        <div id="contact-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste corporis harum hic eveniet quo quisquam dolorem optio voluptatibus, fuga perspiciatis?
+
+          <div id="our-pages">
+            <div id="cell-1"><img class="small-icon" src="/images/home.png" alt="Home:">1234 Somewhere St<br>Burlingtion, VT 00000<br><span>USA</span></div>
+            <div id="cell-2"><img id="phone" src="/images/phone.png" class="small-icon" alt="Phone:">123-456-7890</div>
+            <div id="cell-3"><img id="E-mail" src="/images/email.png" class="small-icon" alt="Website:">email@domain.com</div>
+            <div id="cell-4"><img src="/images/twitter.png" class="small-icon" alt="twitter:">@Lorem</div>
+            <div id="cell-5"><img id="instagram" src="/images/instgram.png" class="small-icon" alt="Instagram">@Lorem</div>
+            <div id="cell-6"><img src="/images/website.png" class="small-icon" alt="Website:">www.website.com</div>
+            <div id="cell-7"><img id="facebook" src="/images/facebook.png" class="small-icon" alt="Fabcebook:">Name/facebook.com</div>
+          </div>
+        </div>
       </div>
 
 </body>
