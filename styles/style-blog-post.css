@@ -87,8 +87,6 @@ align-self: flex-start;
 #body-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  /* grid-template-rows: 1fr; */
-
   grid-gap: 2em;
   width: 707px;
   margin-bottom: 5em;
@@ -201,7 +199,6 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* margin-top: 30em; */
   padding-bottom: 2em;
 }
 #contact-table {

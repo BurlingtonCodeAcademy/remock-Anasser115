@@ -1,6 +1,7 @@
 let name;
 let email;
 let message;
+// function to show the info on the contact form
 function submitAlert(){
    name = document.getElementById('name').value;
    email = document.getElementById('email').value;
@@ -10,13 +11,3 @@ function submitAlert(){
 function resetInput(){
     document.getElementById("form-main").reset();
 }
-   
-    /// Another way to remove value but won't remove the requires red line
-
-        // document.querySelectorAll(".resetInput").forEach(input => {
-        //     input.value ="";
-        //     input.removeAttribute('value');
-        //     //     input.removeAttribute('required');
-        //     //    input.setAttribute('required',true)
-        //     // input.addAttribute('required');
-        // });
