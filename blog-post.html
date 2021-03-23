@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog Post</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  </head>
-  <body>
-    <section id="header"></section>
-    <section id="main"></section>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <script src="/script/script.js"></script>
+  <link rel="stylesheet" href="/styles/style-post.css" />
+</head>
+
+<body>
+  <!-- link for top button -->
+  <a id="top"></a>
+  <!-- header -->
+  <section id="header">
+    <div id="title">
+      <!-- title redirect to home page -->
+      <h1 onclick="window.location.href='index.html'">BLOG POST PAGE</h1>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <hr>
+    </div>
+    <!-- article title -->
+    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+  </section>
+
+  <!-- main article container -->
+  <div id="main-1">
+    <!-- article picture -->
+    <figure id="body-pic-1" class="large-image"><img src="/images/large-image.jpg" alt="Place Holder Image">
+    </figure>
+
+
+    <article class="body-article">
+      <!-- article subtitle -->
+      <h5>Lorem, ipsum dolor.</h5>
+      <!-- article body -->
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati repellendus recusandae, cum facere
+        ipsum cumque, libero corrupti eius cupiditate ipsam non ea pariatur magnam soluta et quod, officia modi fuga
+        fugit! Quo reiciendis, nulla aspernatur, placeat deserunt eaque est dolor blanditiis autem expedita animi
+        ullam aliquid neque natus eius tempora nemo id odit quis harum, iusto sunt sed! Quaerat, quis consequuntur
+        nesciunt possimus quia recusandae molestias quidem omnis temporibus. Unde.</p>
+      <!-- article subtitle -->
+      <h5>Lorem, ipsum dolor.</h5>
+      <!-- article body -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet eos fugit laudantium quaerat ut
+        quos reiciendis culpa asperiores eum placeat blanditiis aspernatur recusandae corrupti sequi molestiae
+        sapiente nesciunt quas, deserunt soluta qui omnis mollitia alias sint. Corrupti illo ea et nostrum eum
+        dignissimos voluptate impedit consequatur amet, optio provident!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia quod aspernatur sapiente maxime
+        maiores suscipit voluptas. Fuga voluptatum maxime eos iure cum, voluptate commodi aspernatur! Voluptatibus
+        ratione sequi voluptatem?</p>
+    </article>
+  </div>
+  <!-- got to top button -->
+  <button id="top-button" onclick="window.location.href='#top'">Top</button>
+<!-- footer container -->
+  <section id="footer">
+    <h2>QUESTIONS OR COMMENTS? GET IN TOUCH:</h2>
+    <!-- contact us form -->
+    <div id="contact-table">
+      <form action="mailto:email@domain.com" onsubmit="resetInput()" type='submit' id="form-main">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="email" placeholder="E-mail" required><br>
+        <textarea id="message" cols="38" rows="8" placeholder='Message' required></textarea><br>
+        <input onclick="submitAlert()" type="submit" value="Submit" />
+      </form>
+      <div id="contact-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste corporis harum hic eveniet
+        quo quisquam dolorem optio voluptatibus, fuga perspiciatis?
+        <!-- contact info -->
+        <div id="our-pages">
+          <div id="cell-1"><img class="small-icon" src="/images/home.png" alt="Home:">1234 Somewhere St<br>Burlingtion,
+            VT 00000<br><span>USA</span></div>
+          <div id="cell-2"><img id="phone" src="/images/phone.png" class="small-icon" alt="Phone:">123-456-7890</div>
+          <div id="cell-3"><img id="E-mail" src="/images/email.png" class="small-icon" alt="Website:">email@domain.com
+          </div>
+          <div id="cell-4"><img src="/images/twitter.png" class="small-icon" alt="twitter:">@Lorem</div>
+          <div id="cell-5"><img id="instagram" src="/images/instgram.png" class="small-icon" alt="Instagram">@Lorem
+          </div>
+          <div id="cell-6"><img src="/images/website.png" class="small-icon" alt="Website:">www.website.com</div>
+          <div id="cell-7"><img id="facebook" src="/images/facebook.png" class="small-icon"
+              alt="Fabcebook:">Name/facebook.com</div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
 </html>
